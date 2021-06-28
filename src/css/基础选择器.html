@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>基础选择器</title>
+    <style>
+        /* id选择器 选取id,优先级1 */
+        #div1{
+            color: red;
+        }
+        /* 元素选择器 选取相同标签的元素，优先级最低 */
+        div{
+            color: aqua;
+        }
+        /* 类选择器 选择相同class属性的元素, 优先级2 */
+        .dia1{
+            color: #265103;
+        }
+    </style>
+</head>
+<body>
+
+<div id="div1">
+    持仓
+</div>
+<div>
+    持仓详情
+</div>
+
+<div class="dia1">
+    持仓详情
+</div>
+
+</body>
+</html>
