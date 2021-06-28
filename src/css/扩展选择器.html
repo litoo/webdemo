@@ -3,8 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <title>扩展选择器</title>
+    <style>
+        /*选择所有元素*/
+        *{
+            color:red;
+        }
+        /*并集选择器*/
+        div,p{
+            color: green;
+        }
+        /*子选择器 修改div下的子标签p样式 */
+        div p{
+            color: blueviolet;
+        }
+        /* 父选择器 改变父元素样式 */
+        div > p{
+            border: 1px solid;
+        }
+        /* 属性选择器 改变带有指定属性的元素 */
+        input[type="text"]{
+            border: 2px solid;
+        }
+
+    </style>
 </head>
 <body>
-
+<div>
+    <p>sss</p>
+</div>
+<p>
+    哈哈
+</p>
+<br>
+<input type="text">
+<input type="password">
 </body>
 </html>
