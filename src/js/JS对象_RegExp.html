@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>正则表达式对象</title>
+</head>
+<body>
+  单个字符：[]
+    [a-zA-Z0-9]
+  特殊符号代表特殊含义的单个字符：
+    \d:单个数字字符[0-9]
+    \w:单个单词字符[a-zA-Z0-9]
+  量词符号：
+    ？表示出现0次或者1次
+    * 表示出现0次或者多次
+    + 表示出现1次或多次
+    {m,n}:表示 m<= 数量 <=n,m如果缺省{,  n}表示最多n次，n缺省表示最少m次
+  开始结束符号
+    ^ 表示开始
+    $ 表示结束
+<script>
+  //两种创建方式
+  // var reg = new RegExp("a-z")
+  // var reg = /^a-z$/
+  var reg = /^\w{6,12}$/  //6-12个字符
+  alert(reg.test("4545451"))
+</script>
+
+</body>
+</html>
