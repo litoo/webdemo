@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Window</title>
+</head>
+<body>
+
+<input id="btn" type="button" value="打开">
+
+<script>
+    /* 可以使用window.或者直接调用方法
+      alert()
+      comfirm() 提示框，点确定返回true 否则false
+      prompt() 用户输入框，返回值为用户输入信息
+      open()
+      close()
+      定时器相关
+        setTimeout(方法，时间间隔) 一次执行的定时器
+        clearTimeout(定时器返回值)
+        setInterval(方法，时间间隔)循环定时器
+        clearInterval(定时器返回值)
+
+      属性：
+        获取其他BOM对象
+            history
+            screen
+            location
+            navigator
+        获取DOM对象
+            window.document
+
+
+    */
+    // var ext = confirm("确定退出么？")
+    // if (ext){
+    //   close()
+    // }
+    let elementById = document.getElementById("btn");
+    elementById.onclick = function () {
+        open()
+    }
+
+</script>
+</body>
+</html>
